@@ -1,0 +1,4 @@
+let Run=522;
+let TimesOut=27;
+let BatAverage = Run/TimesOut
+console.log(BatAverage);

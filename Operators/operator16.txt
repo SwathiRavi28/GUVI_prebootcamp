@@ -1,0 +1,5 @@
+let AC=500;
+let SC=450;
+let Dis=AC-SC;
+
+console.log(Dis);

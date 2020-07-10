@@ -1,0 +1,5 @@
+let watts=100*24
+let U=(watts/1000)*30
+let Rate=U*10
+
+console.log(Rate);

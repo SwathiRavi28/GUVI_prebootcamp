@@ -1,0 +1,3 @@
+let meter=16;
+let M=meter/1609;
+console.log(M);

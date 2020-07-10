@@ -1,0 +1,6 @@
+let r=5;
+let diam=2*r;
+let area=Math.PI*diam;
+let cir=2*Math.PI*r;
+
+console.log(area,cir,diam);
