@@ -1,5 +1,0 @@
-let b=5;
-let h=4;
-let AIT=b*h*1/2
-
-console.log(AIT);
