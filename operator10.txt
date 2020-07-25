@@ -1,7 +1,0 @@
-let r=5;
-let t=8;
-let P=50000
-
-let A=P*(1+r*t)
-
-console.log(A);
