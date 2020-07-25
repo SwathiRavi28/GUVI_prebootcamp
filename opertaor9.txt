@@ -1,9 +1,0 @@
-let a=5;
-let P=3;
-let Val=1
-for(i=0;i<P;i++)
-{
- Val=Val*a;
-}
-
-console.log(Val);
