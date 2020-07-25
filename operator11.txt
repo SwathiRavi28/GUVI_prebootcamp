@@ -1,5 +1,0 @@
-let a=5;
-
-let AET=(Math.sqrt(3)/4)*a*a
-
-console.log(AET);
