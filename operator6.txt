@@ -1,3 +1,0 @@
-let kg=60;
-let p=kg/2.205;
-console.log(p);
