@@ -1,5 +1,0 @@
-let r=5;
-let cube=r*r*r
-let Sphere=4/3*Math.PI*cube
-
-console.log(Sphere);
