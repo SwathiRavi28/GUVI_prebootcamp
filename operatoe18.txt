@@ -1,6 +1,0 @@
-let pattern="*****"
-console.log(pattern);
-console.log(pattern);
-console.log(pattern);
-console.log(pattern);
-console.log(pattern);
