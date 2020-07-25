@@ -1,5 +1,0 @@
-let L=50;
-let BA=40;
-let Prism=L*BA
-
-console.log(Prism);
