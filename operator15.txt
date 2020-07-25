@@ -1,5 +1,0 @@
-let H=50;
-let B=40;
-let TA=(H*B)*1/2;
-
-console.log(TA);
