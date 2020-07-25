@@ -1,3 +1,0 @@
-let cel=16;
-let F=(cel*9/5)+32;
-console.log(F);
