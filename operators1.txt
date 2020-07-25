@@ -1,3 +1,0 @@
-let a=16;
-let square=Math.sqrt(a);
-console.log(square)
