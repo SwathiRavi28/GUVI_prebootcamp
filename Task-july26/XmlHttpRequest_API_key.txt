@@ -1,0 +1,8 @@
+var  request = new XMLHttpRequest()
+var url= 'https://cors-anywhere.herokuapp.com/https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=5d80bbdeecc56bf0f269c9cd70af0028';
+
+request.open('GET',url , true)
+request.send();
+fetch(url) 
+.then(res=>res.json())
+.then(data=>console.log(data))
