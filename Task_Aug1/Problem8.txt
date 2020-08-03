@@ -1,0 +1,52 @@
+var securityQuestions = [
+ {
+ question: 'What was your first pet’s name?',
+ expectedAnswer: 'FlufferNutter'
+ },
+ {
+ question: 'What was the model year of your first car?',
+ expectedAnswer: '1985'
+ },
+ {
+ question: 'What city were you born in?',
+ expectedAnswer: 'NYC'
+ }
+]
+
+function chksecurityQuestions(ques,ans) {
+if(ques==securityQuestions[0].question)
+{
+    if(ans==securityQuestions[0].expectedAnswer)
+    {
+        return  true;
+    }
+    else{return false ;}
+}
+else if(ques==securityQuestions[1].question)
+{
+    if(ans==securityQuestions[1].expectedAnswer)
+    {
+        return  true;
+    }
+    else{return false; }
+    
+}
+else if(ques==securityQuestions[2].question)
+    {
+    if(ans==securityQuestions[2].expectedAnswer)
+    {
+        return  true;
+    }
+    else{return false; }
+    }
+else{return false; }
+}
+var ques = 'What was your first pet’s name?';
+var ans  =  'FlufferNutter';
+var status1 = chksecurityQuestions(ques, ans);
+console.log(status1); 
+var ques = 'What was your first pet’s name?';
+var ans  =  'DufferNutter';
+var status2 = chksecurityQuestions(securityQuestions, ques, ans);
+console.log(status2); // flase
+

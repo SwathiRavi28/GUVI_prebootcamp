@@ -1,0 +1,43 @@
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+}
+let i,sum=0;
+cat.height=9;
+cat.weight=9;
+cat.name="Fluffyy";
+
+for(i=0;i<2;i++)
+{
+console.log(cat.catFriends[i].activities)
+console.log(cat.catFriends[i].name)
+sum=sum+(cat.catFriends[i].weight) 
+}
+console.log(sum);
+
+var total=cat.activities.length +cat.catFriends[0].activities.length+cat.catFriends[1].activities.length;
+console.log(total);
+for(i=0;i<2;i++)
+{
+cat.catFriends[i].activities.push('play');
+cat.catFriends[i].activities.push('nap');
+    
+}
+cat.catFriends[0].furcolor='brown'
+
+console.log(cat);
+//console.log(cat);
+

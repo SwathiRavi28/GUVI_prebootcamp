@@ -1,0 +1,19 @@
+var expected = {foo: 5, bar: 6};
+var actual = {foo: 5, bar: 6}
+function assertObjectsEqual(actual, expected){
+    
+   if(actual.foo==expected.foo & actual.bar==expected.bar)
+{
+    return 'Passed' ;       
+}else
+{
+ return 'failed'  ;
+} 
+ 
+}
+var res=assertObjectsEqual(actual, expected)
+console.log(res)
+var expected = {foo: 8, bar: 6};
+var actual = {foo: 5, bar: 6}
+var res=assertObjectsEqual(actual, expected)
+console.log(res)
