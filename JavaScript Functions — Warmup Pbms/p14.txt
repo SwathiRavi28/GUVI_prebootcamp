@@ -1,0 +1,14 @@
+function isEven(num){
+ // your code here
+ if(typeof num!=="number"){
+     return -1;
+ }
+ if(num%2===0)
+ {
+     return true;
+ }else {
+     return false;
+ }
+}
+var even = isEven("5k")
+console.log(even)

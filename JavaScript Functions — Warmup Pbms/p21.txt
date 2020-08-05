@@ -1,0 +1,15 @@
+
+
+function getLastElement(array){
+    var l=array.length;
+    if(l!==0){
+        return array[l-1];
+    }else{
+        return -1
+    }
+ // your code here
+}
+console.log(getLastElement([1, 2, 3, 4]));
+
+
+
