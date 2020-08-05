@@ -1,0 +1,10 @@
+var arr = ["SAP", "BASIS", "SAP", "DOTNET", "OS", 
+                     "OS", "Java", "DOTNET", "Algo"]; 
+var arr1 = []; 
+          
+var rem_set =function (arr) { 
+let arr1 = Array.from(new Set(arr)) 
+return arr1
+} 
+var res=rem_set(arr);
+console.log(res);

@@ -1,0 +1,16 @@
+var arr1 = [1,2,3,4,5]; 
+var arr2 = [6,7,8,9,10]; 
+          
+var Median=function (arr1,arr2) { 
+    
+ arr = arr1.concat(arr2); 
+ mid1=arr.length/2;
+ mid2=(arr.length-1)/2;
+ m=Math.floor(mid2)
+ n1=arr[mid1];
+ n2=arr[m];
+ median=(n1+n2)/2
+return (median);
+}
+var res=Median(arr1,arr2);
+console.log(res);

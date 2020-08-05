@@ -1,0 +1,13 @@
+
+(function() 
+{
+    var arr=["fluffy","cutie","fatty"];
+    var arr1=[]
+    for(i=0;i<arr.length;i++)
+    {
+    var ans= arr[i].charAt(0).toUpperCase()+arr[i].slice(1) ;
+    arr1.push(ans)
+    }
+   console.log(arr1)
+})();
+

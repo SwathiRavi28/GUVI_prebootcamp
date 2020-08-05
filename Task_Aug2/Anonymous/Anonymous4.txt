@@ -1,0 +1,25 @@
+let arr1=[];
+let arr=[4,33,13,45,17];
+
+var prim=function(arr){
+for(j=0;j<arr.length;j++)
+{ num=arr[j];
+var flag=0
+for(i=2 ; i < num/2 ; i++) 
+   {
+      if(num%i === 0) 
+      {
+         continue;
+      }     
+        else
+        {
+            flag=1
+        }
+   }if(flag===1){
+       arr1.push(num);
+   }
+}
+    return arr1;
+}
+var res=prim(arr);
+console.log(res)

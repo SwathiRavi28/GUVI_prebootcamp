@@ -1,0 +1,13 @@
+let arr=["fluffy","cutie","fatty"];
+let arr1=[]
+var Caps = function(arr) 
+{
+    for(i=0;i<arr.length;i++)
+    {
+    var ans= arr[i].charAt(0).toUpperCase()+arr[i].slice(1) ;
+    arr1.push(ans)
+    }
+    return arr1;
+}
+var res=Caps(arr);
+console.log(res)

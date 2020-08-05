@@ -1,0 +1,7 @@
+(function () { 
+    var arr = ["SAP", "BASIS", "SAP", "DOTNET", "OS", 
+                     "OS", "Java", "DOTNET", "Algo"]; 
+var arr1 = []; 
+ arr1 = Array.from(new Set(arr)) 
+console.log(arr1);
+})();
