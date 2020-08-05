@@ -1,0 +1,12 @@
+
+function getDistance(x1, y1, x2, y2)
+{
+ 	var xDiff = x1 - x2; 
+	var yDiff = y1 - y2;
+
+	return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+}
+console.log(getDistance(100, 100, 400, 300));
+
+
+

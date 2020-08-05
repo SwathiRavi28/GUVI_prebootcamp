@@ -1,0 +1,12 @@
+var arr = [1, 2, 3];
+function hourToSeconds(arr) {
+    var a=[]
+    for(i=0;i<arr.length;i++)
+    {
+        res=arr[i]*3600;
+        a.push(res)
+    }
+    return a;
+}
+var data = hourToSeconds(arr)
+console.log(data);

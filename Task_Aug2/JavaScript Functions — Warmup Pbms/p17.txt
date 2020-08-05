@@ -1,0 +1,15 @@
+function getLengthOfWord(word1){
+    if(typeof word1!=="string"){
+        return -1;
+    }else{
+    return word1.length;}
+ // your code here
+}
+var len = getLengthOfWord("GUVI");
+console.log(len);
+var len =getLengthOfWord("");
+console.log(len);
+var len =getLengthOfWord();
+console.log(len);
+var len =getLengthOfWord(9);
+console.log(len);
