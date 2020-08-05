@@ -1,0 +1,11 @@
+function findMax(ar)
+{ 
+    var n=ar.map(input => parseInt(input));
+    
+    var m=Math.max(...n)
+    return m
+// your code here
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log("Max: ", max);

@@ -1,0 +1,5 @@
+function powersOfTwo(n){
+  res=Math.pow(2,n)
+  return res;
+}
+console.log(powersOfTwo(3))

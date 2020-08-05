@@ -1,0 +1,21 @@
+var arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+function countPositivesSumNegatives(arr) {
+    var count=0,sum=0;
+    var n=arr.length;
+ var arr1=[]
+ for(i=0;i<n;i++)
+{
+    if(arr[i]>=0){
+       count++;
+    }else
+    {
+        sum+=arr[i];
+    }
+}
+    arr1.push(count);
+    arr1.push(sum);
+    return arr1;
+}
+ 
+
+console.log(countPositivesSumNegatives(arr));
