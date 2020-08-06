@@ -1,0 +1,10 @@
+var obj = {
+ mykey: 'value'
+};
+function addProperty(obj, key){
+    
+     obj[key]="true"
+ // your code here
+}
+addProperty(obj,'mykey');
+console.log(obj);

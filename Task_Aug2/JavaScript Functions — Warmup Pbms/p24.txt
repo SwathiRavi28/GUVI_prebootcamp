@@ -1,0 +1,11 @@
+var obj = {
+ mykey: 'value',
+ name:"swa"
+};
+function removeProperty(obj, key){
+ // your code here
+delete obj[key] ;
+ 
+}
+removeProperty(obj, 'name');
+console.log(obj.name);
