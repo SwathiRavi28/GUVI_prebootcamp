@@ -1,0 +1,27 @@
+function second(a,b)
+{
+    var opr1 = 10;
+    var opr2 = 90;
+    if(a==1){
+        console.log(b[0](opr1,opr2));
+    }
+     if(a==2){
+        console.log(b[1](opr1,opr2));
+    }
+     if(a==3){
+        console.log(b[2](opr1,opr2));
+    }
+}
+arr = [add,sub,mul];
+second(1,arr); 
+second(2,arr);
+second(3,arr); 
+function add(a,d){
+    return a+d;
+}
+function sub(a,d){
+    return a-d;
+}
+function mul(a,d){
+    return a*d;
+}
