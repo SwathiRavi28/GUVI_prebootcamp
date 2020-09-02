@@ -1,0 +1,406 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="resume.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <script>
+        var container = document.createElement("div");
+        container.setAttribute("class", "my_container");
+
+        var top1 = document.createElement("div");
+        top1.setAttribute("class", "top");
+
+
+        var img = document.createElement('img');
+        img.setAttribute("class", "img");
+        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSijrbbLBXEs1gkwgu8H3yKryNxmL1SRpvxtw&usqp=CAU";
+        top1.append(img);
+
+        var nam = document.createElement("div");
+        nam.setAttribute("class", "name");
+        nam.innerHTML = '<b>BRAIN DUDEY</b>';
+        top1.append(nam);
+        nam.style.paddingTop = '10px';
+        nam.style.fontSize = '35px';
+
+        var mid = document.createElement("div");
+        mid.setAttribute("class", "mid");
+        var last = document.createElement("div");
+        last.setAttribute("class", "last");
+
+
+        var add = document.createElement("div");
+        add.setAttribute("class", "head");
+        add.innerHTML = '<p style=" border-bottom: solid black 1px;"> N.Damen Avenue, Chicago 999999| 999-999-9999|hello@kickresume.com|www.kickeresume.com </p>'
+
+
+        var hrclr = document.createElement("div");
+        hrclr.setAttribute("class", "hrcolor");
+
+        var first1 = document.createElement("div");
+        first1.setAttribute("class", "first");
+        first1.style.paddingLeft = '20px';
+
+        var div11 = document.createElement("div");
+        div11.innerHTML = '<h3 style="margin-top:5px;font-size:28px;"><i class="fas fa-address-book"style="position:relative;height=8px;width:32px;background-color:#565656;padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;text-align:center;font-size:20px;border-radius:30px;color: #FDBF36;;border:2px dashed  #FDBF36;float :left;margin-top:0px;margin-right:5px"></i></i>Profile</h3>'
+        first1.append(div11)
+
+
+        var div2 = document.createElement("div");
+        div2.innerHTML = "<p style:'margin-top:0px;'>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer.I am ambitious, adventurous, assiduous, nimated and an aliteration advocate.</p>"
+
+        first1.append(div2);
+
+
+        var divis1 = document.createElement("div");
+        divis1.innerHTML = '<h3 style="margin-top:5px;font-size:28px;margin-bottom:0px;"><i class="fas fa-lightbulb" style="position:relative;height=8px;width:32px;background-color:#565656;padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;text-align:center;font-size:20px;border-radius:30px;color: #FDBF36;border:2px dashed  #FDBF36;float :left;margin-top:0px;margin-right:5px"></i>Skills</h3> ';
+
+        first1.append(divis1);
+
+        var division1 = document.createElement("div");
+        division1.innerHTML = '<p style="text-align:center;margin-top:0px"><b>Technical skills</b></p>';
+        first1.append(division1);
+
+        var division_1 = document.createElement("div");
+
+
+        var div_r_1 = document.createElement("div");
+        div_r_1.setAttribute("class", "row");
+        var div_side_1 = document.createElement("div");
+        div_side_1.setAttribute("class", "side");
+        div_side_1.innerHTML = "Javascript";
+        div_r_1.append(div_side_1);
+
+        var div_middle_1 = document.createElement("div");
+        div_middle_1.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy3");
+        div_gray.append(div_y);
+        div_middle_1.append(div_gray);
+        div_r_1.append(div_middle_1);
+
+        var div_r_2 = document.createElement("div");
+        div_r_2.setAttribute("class", "row");
+        var div_side_2 = document.createElement("div");
+        div_side_2.setAttribute("class", "side");
+        div_side_2.innerHTML = "HTML";
+        div_r_2.append(div_side_2);
+
+        var div_middle_2 = document.createElement("div");
+        div_middle_2.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy2");
+        div_gray.append(div_y);
+        div_middle_2.append(div_gray);
+        div_r_2.append(div_middle_2);
+
+        var div_r_3 = document.createElement("div");
+        div_r_3.setAttribute("class", "row");
+        var div_side_3 = document.createElement("div");
+        div_side_3.innerHTML = "CSS";
+        div_side_3.setAttribute("class", "side");
+        div_r_3.append(div_side_3);
+
+        var div_middle_3 = document.createElement("div");
+        div_middle_3.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy3");
+        div_gray.append(div_y);
+        div_middle_3.append(div_gray);
+        div_r_3.append(div_middle_3);
+
+        var div_r_4 = document.createElement("div");
+        div_r_4.setAttribute("class", "row");
+        var div_side_4 = document.createElement("div");
+        div_side_4.setAttribute("class", "side");
+        div_side_4.innerHTML = "React";
+        div_r_4.append(div_side_4);
+
+        var div_middle_4 = document.createElement("div");
+        div_middle_4.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy4");
+        div_gray.append(div_y);
+        div_middle_4.append(div_gray);
+        div_r_4.append(div_middle_4);
+
+        var div_r_5 = document.createElement("div");
+        div_r_5.setAttribute("class", "row");
+        var div_side_5 = document.createElement("div");
+        div_side_5.setAttribute("class", "side");
+        div_side_5.innerHTML = "Redux";
+        div_r_5.append(div_side_5);
+
+        var div_middle_5 = document.createElement("div");
+        div_middle_5.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy5");
+        div_gray.append(div_y);
+        div_middle_5.append(div_gray);
+        div_r_5.append(div_middle_5);
+
+        var div_r_6 = document.createElement("div");
+        div_r_6.setAttribute("class", "row");
+        var div_side_6 = document.createElement("div");
+        div_side_6.innerHTML = "Deployment";
+        div_side_6.setAttribute("class", "side");
+        div_side_6.innerHTML = "Deployment";
+        div_r_6.append(div_side_6);
+
+        var div_middle_6 = document.createElement("div");
+        div_middle_6.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy6");
+        div_gray.append(div_y);
+        div_middle_6.append(div_gray);
+        div_r_6.append(div_middle_6);
+
+        var div_r_7 = document.createElement("div");
+        div_r_7.setAttribute("class", "row");
+        var div_side_7 = document.createElement("div");
+        div_side_7.setAttribute("class", "side");
+        div_side_7.innerHTML = "Mongo";
+        div_r_7.append(div_side_7);
+
+        var div_middle_7 = document.createElement("div");
+        div_middle_7.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy7");
+        div_gray.append(div_y);
+        div_middle_7.append(div_gray);
+        div_r_7.append(div_middle_7);
+
+        division_1.append(div_r_1);
+        division_1.append(div_r_2);
+        division_1.append(div_r_3);
+        division_1.append(div_r_4);
+        division_1.append(div_r_5);
+        division_1.append(div_r_6);
+        division_1.append(div_r_7);
+        division1.append(division_1);
+
+        var division2 = document.createElement("div");
+        division2.innerHTML = '<p style="text-align:center;margin-top:5px"><b>Additional skills</b></p>'; division2.setAttribute("class", "sub")
+        first1.append(division2);
+
+        var division = document.createElement("div");
+
+        var div_r1 = document.createElement("div");
+        div_r1.setAttribute("class", "row");
+        var div_side1 = document.createElement("div");
+        div_side1.setAttribute("class", "side");
+        div_side1.innerHTML = "Recruitment";
+        div_r1.append(div_side1);
+
+        var div_middle1 = document.createElement("div");
+        div_middle1.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy7");
+        div_gray.append(div_y);
+        div_middle1.append(div_gray);
+        div_r1.append(div_middle1);
+
+        var div_r2 = document.createElement("div");
+        div_r2.setAttribute("class", "row");
+        var div_side2 = document.createElement("div");
+        div_side2.setAttribute("class", "side");
+        div_side2.innerHTML = "Business Development";
+        div_r2.append(div_side2);
+
+        var div_middle2 = document.createElement("div");
+        div_middle2.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy3");
+        div_gray.append(div_y);
+        div_middle2.append(div_gray);
+        div_r2.append(div_middle2);
+
+        var div_r3 = document.createElement("div");
+        div_r3.setAttribute("class", "row");
+        var div_side3 = document.createElement("div");
+        div_side3.setAttribute("class", "side");
+        div_side3.innerHTML = "Editing";
+        div_r3.append(div_side3);
+
+        var div_middle3 = document.createElement("div");
+        div_middle3.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy7");
+        div_gray.append(div_y);
+        div_middle3.append(div_gray);
+        div_r3.append(div_middle3);
+
+        var div_r4 = document.createElement("div");
+        div_r4.setAttribute("class", "row");
+        var div_side4 = document.createElement("div");
+        div_side4.setAttribute("class", "side");
+        div_side4.innerHTML = "Fundraising";
+        div_r4.append(div_side4);
+
+        var div_middle4 = document.createElement("div");
+        div_middle4.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy4");
+        div_gray.append(div_y);
+        div_middle4.append(div_gray);
+        div_r4.append(div_middle4);
+
+        var div_r5 = document.createElement("div");
+        div_r4.setAttribute("class", "row");
+        var div_side5 = document.createElement("div");
+        div_side5.setAttribute("class", "side");
+        div_side5.innerHTML = "Project Management";
+        div_r5.append(div_side5);
+
+        var div_middle5 = document.createElement("div");
+        div_middle5.setAttribute("class", "middle");
+        var div_gray = document.createElement("div");
+        div_gray.setAttribute("class", "clsg");
+        var div_y = document.createElement("div");
+        div_y.setAttribute("class", "clsy6");
+        div_gray.append(div_y);
+        div_middle5.append(div_gray);
+        div_r5.append(div_middle5);
+
+        division.append(div_r1);
+        division.append(div_r2);
+        division.append(div_r3);
+        division.append(div_r4);
+        division.append(div_r5);
+        division2.append(division);
+
+        var divbr = document.createElement("br")
+        first1.append(divbr);
+
+
+        var div4 = document.createElement("div");
+        div4.innerHTML = ' <h3 style="margin-top:15px;margin-bottom:5px;font-size:28px;"><i class="fas fa-briefcase" style="position:relative;height=8px;width:35px;background-color:#565656;padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;text-align:center;font-size:20px;border-radius:30px;color: #FDBF36;;border:2px dashed  #FDBF36;float :left;margin-top:0px;margin-right:5px"></i>Work  Experience</h3>';
+        div4.setAttribute("class", "topic");
+        first1.append(div4);
+
+
+
+        var div5 = document.createElement("div");
+        div5.innerHTML = ' <p><b>Event Manager</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03/2014-02/2017 <br>C3 Presents,Washington DC</p>';
+
+        first1.append(div5);
+
+
+        var div6 = document.createElement("div");
+        var listParent1 = document.createElement('UL');
+        var l1 = document.createElement('li');
+        var l2 = document.createElement('li');
+        var l3 = document.createElement('li');
+
+        l1.innerText = 'Lead and execute all phase of event planning and production spanning committe recruitment,trining,vendor relationships and on-site facilitation.';
+        l2.innerText = 'Brought new business to the organia=zation through relentless networking and stewardship which helped the company win the bid for the State Department Submit on the Middle East and, the companies largest civic event to date,the United State of Women.';
+        l3.innerText = 'Designing, creating and managing content across multiple communication platforms.';
+
+        listParent1.appendChild(l1);
+        listParent1.appendChild(l2);
+        listParent1.appendChild(l3);
+        div6.append(listParent1);
+        first1.append(div6);
+
+
+        var second1 = document.createElement("div");
+        second1.setAttribute("class", "second");
+
+        var div1_sec = document.createElement("div");
+        div1_sec.innerHTML = '<h3  style="margin-top:5px;margin-bottom:5px;font-size:28px;"><i class="fas fa-briefcase" style="position:relative;height=8px;width:35px;background-color:#565656;padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;text-align:center;font-size:20px;border-radius:30px;color: #FDBF36;;border:2px dashed  #FDBF36;float :left;margin-top:0px;margin-right:5px"></i></i>Work Experience</h3>'
+        div1_sec.setAttribute("class", "topic");
+        second1.append(div1_sec);
+
+
+        var div2_sec = document.createElement("div");
+        div2_sec.innerHTML = ' <p><b>Community Relations Manager</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03/2011-01/2014 <br> Gay &lesbian Elder housing,los Angeles</p>'
+        second1.append(div2_sec);
+
+        var div_sec = document.createElement("div");
+        var listParent = document.createElement('UL');
+        var list1 = document.createElement('li');
+        var list2 = document.createElement('li');
+        var list3 = document.createElement('li');
+        var list4 = document.createElement('li');
+        list1.innerText = 'Arranging presentations and pitch deck.';
+        list2.innerText = 'Designing a PR plan and establishing important focus points.';
+        list3.innerText = 'Designing, creating and managing content across multiple communication platforms.';
+        list4.innerText = 'Building relationships with key media players.';
+        listParent.appendChild(list1);
+        listParent.appendChild(list2);
+        listParent.appendChild(list3);
+        listParent.appendChild(list4);
+        div_sec.append(listParent);
+        second1.append(div_sec);
+
+        var div3_last = document.createElement("div");
+        div3_last.innerHTML = '<h3 style="margin-top:5px;font-size:28px;"><i class="fas fa-graduation-cap"style="position:relative;height=8px;width:35px;background-color:#565656;padding-top:5px;padding-left:5px;padding-right:5px;padding-bottom:5px;text-align:center;font-size:20px;border-radius:30px;color: #FDBF36;;border:2px dashed  #FDBF36;float :left;margin-top:0px;margin-right:5px"></i>Education</h3>'
+        second1.append(div3_last);
+
+        var div3_sec = document.createElement("div");
+        div3_sec.innerHTML = '<p><b>Engineering immersion program</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11/2018-06/2018 <br>Thinkful,Chicago,IL</p>'
+        second1.append(div3_sec);
+
+
+
+        var div4_sec = document.createElement("div");
+        div4_sec.innerHTML = "Project-focused intensive program with emphasis on Mongo,Express,React, and Javascript technical stack.";
+        second1.append(div4_sec);
+
+        var div5_sec = document.createElement("div");
+        var listParent1 = document.createElement('UL');
+        var l1 = document.createElement('li');
+        var l2 = document.createElement('li');
+        var l3 = document.createElement('li');
+
+        l1.innerText = 'Developed a full-stack web application,"RenewU",using React that allows users to explore various aspescts of meditation.Users progress is stored on  a backend created using Node and MongoDB.';
+        l2.innerText = 'Developed a language learning app,"Foodie Phonetics" using spaced repetitions and a linked list dat structure.react was used to create the front end components while Node and mongo were used to create a backend that stores user data.';
+        l3.innerText = 'Developed a language learning app,"Foodie Phonetics" using spaced repetitions and a linked list dat structure.react was used to create the front end components while Node and mongo were used to create a backend that stores user data.Developed a full - stack web application, "RenewU", using React that allows users to explore various aspescts of meditation.';
+
+        listParent1.appendChild(l1);
+        listParent1.appendChild(l2);
+        listParent1.appendChild(l3);
+
+        div5_sec.append(listParent1);
+        second1.append(div5_sec);
+
+        var div6_sec = document.createElement("div");
+        div6_sec.innerHTML = ' <p><b>BA,English</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09/2001-09/2005<br>University of California,Los Angles </p>'
+        second1.append(div6_sec);
+
+        container.append(top1, hrclr, mid, last, add, first1, second1);
+        document.body.appendChild(container);
+
+    </script>
+</body>
+
+</html>
