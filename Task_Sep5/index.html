@@ -1,12 +1,85 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        .container {
+
+
+            width: 350px;
+
+            margin: 0 300px;
+        }
+
+        .controls-item {
+
+            display: inline-block;
+
+        }
+
+
+        table,
+        th,
+        td {
+            border: solid 1px rgb(110, 108, 108);
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            font: 14px Verdana;
+        }
+
+        table {
+            width: 600;
+            height: 450;
+            ;
+            margin: 30px auto 50px auto;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id='timer'></h1>
-    <script src="app.js"></script>
+    <script>
+        var div1 = document.createElement("div");
+        div1.setAttribute("class", "container");
+        var tab = document.createElement("table");
+        tab.setAttribute("class", "table table-dark");
+        tab.setAttribute("id", "our-table");
+        var th = document.createElement("thead");
+        var tr = document.createElement("tr");
+
+        var th1 = document.createElement("th");
+        th1.innerHTML = "ID";
+
+        var th2 = document.createElement("th");
+        th2.innerHTML = "Name";
+        var th3 = document.createElement("th");
+        th3.innerHTML = "Email";
+        tr.append(th1, th2, th3);
+        th.append(tr);
+
+        var tb = document.createElement("tbody");
+        tb.setAttribute("id", "table-body");
+
+        tab.append(th, tb);
+        div1.append(tab);
+        var div2 = document.createElement("div");
+        div2.setAttribute("class", "container");
+        var div3 = document.createElement("div");
+        div3.setAttribute("id", "pagination-wrapper");
+        div2.appendChild(div3);
+        document.body.append(div1, div2);
+
+    </script>
+    <script type="text/javascript" src="pagination.class.js"></script>
 </body>
+
 </html>
