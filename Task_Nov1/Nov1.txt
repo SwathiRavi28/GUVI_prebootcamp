@@ -1,0 +1,368 @@
+1)
+############Topic_Details###############
+db.createCollection("Topic_Details")          
+db.Topic_Details.insertMany([
+    {
+        "Topic_id":2,
+        "Topic_name":"CSS",
+ "Month":"September"
+
+    },
+    {  "Topic_id":3,
+        "Topic_name":"JS",
+       "Month":"September"
+    },
+    {
+          "Topic_id":1,
+        "Topic_name":"HTML",
+        "Month":"September"
+    },
+    {
+          "Topic_id": 4,
+        "Topic_name":"Typesript",
+       "Month":"October"
+    },
+    {  "Topic_id": 5,
+        "Topic_name":"DSA",
+        "Month":"October"
+    }])
+############Task_Details###############
+db.createCollection("Task_Details")
+db.Task_Details.insertMany([
+{
+    "user_id" : 1.,
+    "Task_name" : "Design a newpaper",
+ "Topic_id":2,
+    "last_submitted_Date" : ISODate("2020-11-24T00:00:00.000Z"),
+},
+{
+    "user_id" : 1.,
+    "Task_name" : "Design a newpaper",
+   "Topic_id":1,
+    "last_submitted_Date" : ISODate("2020-11-02T00:00:00.000Z"),
+},
+{
+    "user_id" : 2,
+    "Task_name" : "Design a newpaper",
+ "Topic_id":2,
+    "last_submitted_Date" : ISODate("2020-11-12T00:00:00.000Z"),
+},{
+    "user_id" : 3.,
+    "Task_name" : "Design a newpaper",
+ "Topic_id":2,
+    "last_submitted_Date" : ISODate("2020-11-24T00:00:00.000Z"),
+   
+},{
+    "user_id" : 4,
+    "Task_name" : "Design a newpaper",
+ "Topic_id":2,
+    "last_submitted_Date" : ISODate("2020-11-22T00:00:00.000Z"),
+   
+},
+{
+   
+    "user_id" : 2,
+ "Topic_id":1,
+    "Task_name" : "Calculator",
+    "last_submitted_Date" : ISODate("2020-11-24T00:00:00.000Z"),
+},
+{
+   
+    "user_id" : 3,
+ "Topic_id":2,
+    "Task_name" : "Resume",
+    "last_submitted_Date" : ISODate("2020-11-24T00:00:00.000Z"),
+    
+},
+{
+   
+    "user_id" : 4,
+     "Topic_id":4,
+    "Task_name" : "Pet shop",
+    "last_submitted_Date" : ISODate("2020-11-20T00:00:00.000Z"),
+},
+{
+ 
+    "user_id" : 5,
+ "Topic_id":5,
+    "Task_name" : "Playmusic",
+    "last_submitted_Date" : ISODate("2020-10-29T00:00:00.000Z"),
+   
+}
+])
+----------------------------Query------------------------------------------------
+db.Topic_Details.aggregate([
+{$lookup:{from:"Task_Details",localField:"Topic_id", foreignField:"Topic_id",as:"Topic"}},
+{$match:{Month:"October"}},{$unwind:"$Topic"},
+{$project:{"Topic_Name":"$Topic_Name","Task_Name":"$Topic.Task_name","Month":"$Month"}}
+])
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2)
+db.createCollection("Company_drives")
+db.Company_drives.insertMany([
+{
+    "Comapny_Id": 1,
+    "Company_Name": "c1",
+    "Drive_Date": ISODate("2020-11-09T00:00:00.000Z"),
+    "Students_Attended": [3,5]
+},
+{
+    "Comapny_Id": 2,
+    "Company_Name": "c2",
+    "Drive_Date": ISODate("2020-11-19T00:00:00.000Z"),
+    "Students_Attended": [1,2,4]
+},
+{
+    "Comapny_Id": 3,
+    "Company_Name": "c3",
+    "Drive_Date": ISODate("2020-11-19T00:00:00.000Z"),
+    "Students_Attended": [2,4]
+},
+{
+    "Comapny_Id": 4,
+    "Company_Name": "c4",
+    "Drive_Date": ISODate("2020-11-11T00:00:00.000Z"),
+    "Students_Attended": [2,3,4]
+},
+{
+    "Comapny_Id": 5,
+    "Company_Name": "c5",
+    "Drive_Date": ISODate("2020-11-24T00:00:00.000Z"),
+    "Students_Attended": [1,2,4]  
+}
+])
+
+----------------------------Query------------------------------------------------
+db.Company_drives.find({
+    Drive_Date: {
+        $gte: ISODate("2020-11-15T00:00:00.000Z"),
+        $lt: ISODate("2020-11-31T00:00:00.000Z")
+    }
+});
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3)db.createCollection("Users")
+db.Users.insertMany([
+    {
+        "user_id": 1,
+        "user_name":"Swapna",
+        "Companyid_attended":5
+        
+    },
+    { 
+        "user_id": 2,
+         "user_name":"Naveen",
+        "Companyid_attended":4
+        
+    },
+    {
+        "user_id": 3,
+        "user_name":"Swetha",
+        "Companyid_attended":4
+        
+    },
+    {
+         "user_id": 4,
+        "user_name":"Deva",
+        "Companyid_attended":5
+        
+    },
+    { "user_id": 5,
+         "user_name":"Jyothsna",
+        "Companyid_attended":2
+        
+    },
+     {
+        "user_id": 6,
+        "user_name":"kushi",
+        "Companyid_attended":5
+        
+    },
+    { 
+        "user_id": 7,
+         "user_name":"Selva",
+        "Companyid_attended":1
+        
+    },
+    {
+        "user_id": 8,
+        "user_name":"Suraj",
+        "Companyid_attended":3
+        
+    },
+    {
+         "user_id": 9,
+        "user_name":"Prem",
+        "Companyid_attended":4
+        
+    },
+    { "user_id": 10,
+         "user_name":"Lokesh",
+        "Companyid_attended":3
+        
+    }])
+----------------------------Query------------------------------------------------
+db.Company_drives.aggregate([{$unwind: "$Stu_Attended"}, 
+{$lookup:{from:"Users",   localField: "Company_Id",
+        foreignField: "Companyid_attended", as:"Users"}},
+{$unwind: "$Users"},
+{$project:{"Company_Name:": "$Company_Name", "Drive_Date:" : "$drive_date", "user_name:":"$Users.Name"}}
+])
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4)
+db.createCollection("codekata1")
+db.codekata1.insertMany([
+    {
+        "user_id": 1,
+        "user_name":"swathi",
+        "rank": 1900,
+         "Topic_name":"Arrays",
+        "solved_problems":220
+       
+    },
+    {
+        "user_id": 2,
+        "user_name":"Swetha",
+        "rank": 100,
+         "Topic_name":"Math",
+        "solved_problems":720
+    },
+    {
+        "user_id": 3,
+        "user_name":"Swapna",
+        "rank": 940,
+         "Topic_name":"Arrays",
+        "solved_problems":420
+    },
+    {
+        "user_id": 4,
+        "user_name":"Rahim",
+        "Topic_name":"String",
+        "rank": 1990,
+        "solved_problems":290
+    },
+    {
+        "user_id": 5,
+        "user_name":"jega",
+       "Topic_name":"Arrays",
+        "rank": 10900,
+        "solved_problems":20
+    }
+])
+----------------------------Query------------------------------------------------
+    db.codekata1.find({},{user_id,solved_problems:1
+})
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5)
+db.createCollection("Mentors")
+ db.Mentors.insertMany(  
+[
+    {
+        "mentor_id": 1,
+        "mentor_name": "Bala",
+        "mentee_count":20
+       
+    },
+    {
+        "mentor_id": 2,
+        "mentor_name": "Venkat",
+        "mentee_count":25
+    },
+    {
+        "mentor_id": 3,
+        "mentor_name": "Raj",
+        "mentee_count":30
+    },
+    {
+        "mentor_id": 4,
+        "mentor_name": "Ajay",
+        "mentee_count":10
+    },
+    {
+        "mentor_id": 5,
+        "mentor_name": "Reshma",
+        "mentee_count":07
+    }])
+----------------------------Query------------------------------------------------
+    db.Mentors.find( {"mentee_count": { $gt: 15 } } )
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+6)db.createCollection("Attendance_details")
+db.Attendance_details.insertMany(
+    [{
+        "user_id": 1,
+        "user_name":"Swapna",
+        "Date" : ISODate("2020-11-22T00:00:00.000Z"),
+        "Attendace_Status": "Absent" 
+        
+    },
+    { 
+        "user_id": 1,
+         "user_name":"Naveen",
+        "Date" : ISODate("2020-11-27T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    },
+    {
+        "user_id": 2,
+        "user_name":"Swetha",
+         "Date" : ISODate("2020-11-22T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    },
+    {
+         "user_id": 2,
+        "user_name":"Deva",
+       "Date" : ISODate("2020-11-27T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    },
+    {
+        "user_id": 2,
+        "user_name":"Swetha",
+         "Date" : ISODate("2020-11-22T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    },
+    {
+         "user_id": 3,
+        "user_name":"Deva",
+       "Date" : ISODate("2020-11-27T00:00:00.000Z"),
+        "Attendace_Status": "Absent"
+        
+    },
+  {
+        "user_id": 3,
+        "user_name":"Swetha",
+         "Date" : ISODate("2020-11-22T00:00:00.000Z"),
+        "Attendace_Status": "Absent"
+        
+    },
+    {
+         "user_id": 4,
+        "user_name":"Deva",
+       "Date" : ISODate("2020-11-27T00:00:00.000Z"),
+        "Attendace_Status": "Absent"
+        
+    },
+    {
+        "user_id": 5,
+        "user_name":"Swetha",
+         "Date" : ISODate("2020-11-22T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    },
+    {
+         "user_id": 5,
+        "user_name":"Deva",
+       "Date" : ISODate("2020-11-27T00:00:00.000Z"),
+        "Attendace_Status": "Present"
+        
+    }])
+----------------------------Query------------------------------------------------
+ db.Attendace_detail.aggregate([
+{$match : {$and : [{Date:{
+        $gte: ISODate("2020-11-15T00:00:00.000Z"),
+        $lt: ISODate("2020-11-31T00:00:00.000Z")
+    }}, {Attendace_Status:"Absent"}]}},
+ {$group : {_id:"_id", count:{$sum:1}}}
+])
