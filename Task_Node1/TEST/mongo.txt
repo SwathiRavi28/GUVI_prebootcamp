@@ -1,0 +1,191 @@
+Question:
+Find all the topics and tasks which are thought in the month of October
+Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+Find all the company drives and students who are appeared for the placement.
+Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
++++++++++++++++++++++++++++++++++++++++++++++++++++
+db.createCollection.("Topics")          
+db.Topics.insertMany([
+    {
+        "user_id": 1,
+        "Topic_name":"CSS",
+        "Date": 09/10/2020
+        
+    },
+    {"user_id": 2,
+        "Topic_name":"JS",
+        "Date": 19/10/2020
+    },
+    {
+         "user_id": 3,
+        "Topic_name":"HTML",
+        "Date": 04/10/2020
+    },
+    {
+         "user_id": 4,
+        "Topic_name":"Typesript",
+        "Date": 16/10/2020
+    },
+    { "user_id": 5,
+        "Topic_name":"DSA",
+        "Date": 21/10/2020
+    }])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ db.createCollection("Drives") 
+ db.Drives.insertMany(
+[
+    {
+        "company_id": 1,
+        "company_name": "Intelligent Fresh Chips",
+        "drive_date":15-10-2020,
+        "stu_attended":10
+        
+    },
+    {"company_id": 2,
+        "company_name": "Intelligent Fresh Chips",
+        "drive_date":19-10-2020,
+         "stu_attended":40
+    },
+    {
+       "company_id": 3,
+        "company_name": "Intelligent Fresh Chips",
+        "drive_date":10-10-2020,
+         "stu_attended":90
+    },
+    {
+      "company_id": 4,
+        "company_name": "Intelligent Fresh Chips",
+        "drive_date":05-10-2020,
+         "stu_attended":16
+    }, 
+    {
+        "company_id": 5,
+        "company_name": "Intelligent Fresh Chips",
+        "drive_date":24-10-2020,
+         "stu_attended":45
+    }])
+Query:  db.Drives.find( {drive_date:{"$gte": ISODate("2020-10-15T00:00:00Z"),"$lte": ISODate("2020-10-31T00:00:00Z")}
+ } )
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+db.createCollection("Tasks")
+db.Tasks.insertMany([
+    {
+        "user_id": 1,
+        "Task_name":"Design a newpaper",
+        "last_submitted_Date": 09/10/2020,
+        "status":"Nill"
+        
+    },
+    { "user_id": 2,
+        "Task_name":"Calculator",
+        "last_submitted_Date": 11/10/2020,
+        "status":"Nill"
+    },
+    {
+        "user_id": 3,
+        "Task_name":"Resume",
+        "last_submitted_Date": 16/10/2020,
+        "status":"submitted"
+    },
+    {
+         "user_id": 4,
+        "Task_name":"Pet shop",
+        "last_submitted_Date": 18/10/2020,
+        "status":"submitted"
+    },
+    { "user_id": 5,
+        "Task_name":"Playmusic",
+        "last_submitted_Date": 23/10/2020,
+        "status":"submitted"
+    }])
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ db.createCollection("Attendance") 
+ db.Attendance.insertMany(
+[
+    {
+        "User_id": 1,
+        "Attendance_percentage": 92,
+        "Absent":15-10-2020
+        
+    },
+    {
+        "User_id": 2,
+        "Attendance_percentage": 62,
+        "Absent":11-10-2020
+    },
+    {
+      "User_id": 3,
+        "Attendance_percentage": 99,
+        "Absent":18-10-2020
+    },
+    {
+      "User_id": 4,
+        "Attendance_percentage": 92,
+        "Absent":10-10-2020
+    }, 
+    {
+        "User_id": 5,
+        "Attendance_percentage": 89,
+        "Absent":22-10-2020
+    }])
+++++++++++++++++++++++++++++++++++++++++++++++++++
+db.createCollection("Users")
+db.Users.insertMany([
+    {
+        "user_id": 1,
+        "user_name":"Swapna",
+        "Companyid_attended":5
+        
+    },
+    { 
+        "user_id": 2,
+         "user_name":"Naveen",
+        "Companyid_attended":5
+        
+    },
+    {
+        "user_id": 3,
+        "user_name":"Swetha",
+        "Companyid_attended":1
+        
+    },
+    {
+         "user_id": 4,
+        "user_name":"Deva",
+        "Companyid_attended":3
+        
+    },
+    { "user_id": 5,
+         "user_name":"Jyothsna",
+        "Companyid_attended":1
+        
+    }
+     {
+        "user_id": 6,
+        "user_name":"kushi",
+        "Companyid_attended":3
+        
+    },
+    { 
+        "user_id": 7,
+         "user_name":"Selva",
+        "Companyid_attended":1
+        
+    },
+    {
+        "user_id": 8,
+        "user_name":"Suraj",
+        "Companyid_attended":3
+        
+    },
+    {
+         "user_id": 9,
+        "user_name":"Prem",
+        "Companyid_attended":2
+        
+    },
+    { "user_id": 10,
+         "user_name":"Lokesh",
+        "Companyid_attended":4
+        
+    }])
